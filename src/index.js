@@ -11,8 +11,9 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  let parisElement = document.querySelector("#paris");
   if (parisElement) {
-    let parisElement = document.querySelector("#paris");
     let parisDateElement = parisElement.querySelector(".date");
     let parisTimeElement = parisElement.querySelector(".time");
     let parisTime = moment().tz("Europe/Paris");
